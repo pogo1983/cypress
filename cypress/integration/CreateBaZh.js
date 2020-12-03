@@ -3,7 +3,10 @@ describe('CreateBa', () => {
         cy.visit("https://10-tim.imfint.local")
         cy.contains('Log in').click()
         cy.url().should('include','login')
-        cy.contains('username')
+        cy.get('model.username').type('Agent').should('have.value','Agent')
+        cy.get('password').type('pa$$w0rd')
+        cy.contains('inloggen').click()
+        
         
         //expect(true).to.equal(true)
     })

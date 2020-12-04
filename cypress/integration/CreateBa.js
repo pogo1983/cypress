@@ -1,5 +1,5 @@
 describe('CreateBa', () => {
-    it('LOGIN', () => {
+    it('LOGIN TO TIM GUI', () => {
         cy.visit("https://10-tim.imfint.local")
         cy.contains('Log in').click()
         cy.url().should('include','login')
@@ -11,4 +11,8 @@ describe('CreateBa', () => {
         //expect('Infomedics TIM GUI').to.equal('Infomedics TIM GUI')
         //expect(true).to.equal(true)
     })
+    it ('Create BA POGO ZH', () => {
+        
+    }
+    )
 })

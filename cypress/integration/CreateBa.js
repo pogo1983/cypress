@@ -1,3 +1,5 @@
+import LoginGui from '../integration/LoginGui'
+
 describe('CreateBa', () => {
     it('LOGIN TO TIM GUI', () => {
         cy.visit("https://10-tim.imfint.local")
@@ -27,7 +29,7 @@ describe('CreateBa', () => {
         cy.get('li.ng-isolate-scope:nth-child(2) > a:nth-child(1)').click()
         cy.get(':nth-child(1) > :nth-child(2) > .col-xs-8 > .form-group > .col-xs-7 > .form-control').type('Matejki')
         cy.get(':nth-child(1) > :nth-child(2) > .col-xs-8 > .form-group > .col-xs-3 > .form-control').type('6')
-        
+
         //cy.contains('Instituut').click()
         //.select('Instituut')
         //cy.contains('Infomedics TIM GUI').should('include','GUI')

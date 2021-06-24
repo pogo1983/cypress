@@ -8,3 +8,4 @@
 *.mov
 *.mkv
 *.mp4
+node_modules

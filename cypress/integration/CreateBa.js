@@ -2,7 +2,7 @@
 
 describe('CreateBa', () => {
     it('LOGIN TO TIM GUI', () => {
-        cy.visit("https://10-tim.imfint.local")
+        cy.visit("https://07-tim.imfint.local")
         //login to TIM GUI
         cy.contains('Log in').click()
         cy.url().should('include','login')

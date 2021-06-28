@@ -1,4 +1,4 @@
-describe('LoginGUI', () => {
+describe('LoginIAM', () => {
     it('LOGIN TO TIM GUI', () => {
         cy.visit("https://10-tim.imfint.local")
         //login to TIM GUI

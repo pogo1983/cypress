@@ -1,4 +1,4 @@
-//import LoginGui from '../integration/LoginGui' --later
+//import LoginGui from '../integration/LoginGui' --later check
 
 describe('CreateBa', () => {
     it('LOGIN TO TIM GUI', () => {

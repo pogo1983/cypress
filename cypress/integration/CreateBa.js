@@ -15,7 +15,7 @@ describe('CreateBa', () => {
         cy.url().should('include','Providers')
         cy.get('.action-link').click()
         //wait for coockies
-        cy.wait(2000)
+        cy.wait(3000)
         //Create BA , tab details
         cy.get('div.col-xs-6:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > input:nth-child(1)')
         .type('POGO BA ZH TEST')

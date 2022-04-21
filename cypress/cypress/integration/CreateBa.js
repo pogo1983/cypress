@@ -34,12 +34,12 @@ describe('CreateBa', () => {
         cy.get(':nth-child(1) > :nth-child(2) > .col-xs-8 > .form-group > .col-xs-7 > .form-control').type('Matejki')
         cy.get(':nth-child(1) > :nth-child(2) > .col-xs-8 > .form-group > .col-xs-3 > .form-control').type('6')
         cy.get(':nth-child(1) > :nth-child(3) > .col-xs-8 > .form-group > .col-xs-3 > .form-control').type('9999XX')
-        cy.get(':nth-child(1) > :nth-child(3) > .col-xs-8 > .form-group > .col-xs-9 > .form-control').type('Gdansk')
+        cy.get(':nth-child(1) > :nth-child(3) > .col-xs-8 > .form-group > .col-xs-9 > .form-control').type('Gdansk').wait(1000)
         //tab Ba contact
         cy.get('[heading="Contact"] > .ng-binding').click()
         cy.get('div.form-group:nth-child(8) > div:nth-child(1) > div:nth-child(2) > input:nth-child(1)').type('pogotest@pogo.pl')
         cy.get('[ng-click="saveOrUpdate($event)"]').click()
-        cy.wait(1000)
+        cy.wait(3000)
         cy.get('div.col-xs-8:nth-child(1) > div:nth-child(1) > div:nth-child(1) > form:nth-child(1) > fieldset:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1)').should('contain','ZH')
         //create activation
         cy.get('li.ng-isolate-scope:nth-child(5) > a:nth-child(1)').click()
@@ -75,7 +75,11 @@ describe('CreateBa', () => {
         //submitting parties
         cy.get('.contract-participants-grid > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1)').should('contain','ZH')
         //edit party
-        cy.get('div.col10:nth-child(1) > a:nth-child(1)').click()
+        cy.get('div.col10:nth-child(1) > a:nth-child(1)').click().wait(3000)
+        cy.get('body > div.modal.fade.ng-isolate-scope.practitioner-edit-modal.in > div > div > div.modal-body.ng-scope > form > fieldset > div:nth-child(1) > div:nth-child(1) > div.col-xs-6 > input')
+        .click().type('99999999')
+        cy.get('body > div.modal.fade.ng-isolate-scope.practitioner-edit-modal.in > div > div > div.modal-body.ng-scope > form > fieldset > div:nth-child(12) > div:nth-child(1)').click()
+        cy.contains('Opslaan').click()
         //cy.contains('Instituut').click()
         //.select('Instituut')
         //cy.contains('Infomedics TIM GUI').should('include','GUI')

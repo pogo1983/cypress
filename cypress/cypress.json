@@ -1,3 +1,10 @@
 {
-  "projectId": "3gd1fd"
+  "projectId": "3gd1fd",
+  "reporter": "junit",
+  "reporterOptions": {
+    "mochaFile": "tests/test-output-[hash].xml",
+    "toConsole": true,
+    "attachments": true
+  
+}
 }

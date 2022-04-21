@@ -33,7 +33,7 @@ describe('CreateBa', () => {
         cy.get('li.ng-isolate-scope:nth-child(2) > a:nth-child(1)').click()
         cy.get(':nth-child(1) > :nth-child(2) > .col-xs-8 > .form-group > .col-xs-7 > .form-control').type('Matejki')
         cy.get(':nth-child(1) > :nth-child(2) > .col-xs-8 > .form-group > .col-xs-3 > .form-control').type('6')
-        cy.get(':nth-child(1) > :nth-child(3) > .col-xs-8 > .form-group > .col-xs-3 > .form-control').type('1212AA')
+        cy.get(':nth-child(1) > :nth-child(3) > .col-xs-8 > .form-group > .col-xs-3 > .form-control').type('9999XX')
         cy.get(':nth-child(1) > :nth-child(3) > .col-xs-8 > .form-group > .col-xs-9 > .form-control').type('Gdansk')
         //tab Ba contact
         cy.get('[heading="Contact"] > .ng-binding').click()
@@ -47,22 +47,29 @@ describe('CreateBa', () => {
         cy.get('p.ng-binding:nth-child(2)').should('contain','ZH')
         cy.get('div.btn-group:nth-child(3) > button:nth-child(1)').click()
         //chose Uitgebreid
-        cy.get('div.btn-group:nth-child(3) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1) > span:nth-child(1)').click()
-        cy.get('div.btn-group:nth-child(6) > button:nth-child(1)').click()
+        //cy.contains('Uitgebreid').click()
+        cy.get('div.btn-group:nth-child(3) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1)').click()
+        //cy.get('div.btn-group:nth-child(3) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1) > span:nth-child(1)').click().contains('Uitgebreid').click()
+        //cy.get('div.btn-group:nth-child(3) > button:nth-child(1)').click()
+        //cy.get('div.btn-group:nth-child(3) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1)').click()
         //chose 3rd party factoring
-        cy.get('div.btn-group:nth-child(6) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1) > span:nth-child(1)').click()
-        cy.get('div.btn-group:nth-child(9) > button:nth-child(1)').click()
+        cy.get('div.btn-group:nth-child(6) > button:nth-child(1)').click()
+        cy.get('div.btn-group:nth-child(6) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1)').click()
         //chose IZ
-        cy.get('div.btn-group:nth-child(9) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(5) > a:nth-child(1) > span:nth-child(1)').click()
-        cy.get('div.btn-group:nth-child(12) > button:nth-child(1)').click()
+        cy.get('div.btn-group:nth-child(9) > button:nth-child(1)').click()
+        cy.get('div.btn-group:nth-child(9) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(5) > a:nth-child(1)').click()
         //chose MZC
-        cy.get('div.btn-group:nth-child(12) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1) > span:nth-child(1)').click()
+        cy.get('div.btn-group:nth-child(12) > button:nth-child(1)').click()
+        cy.get('div.btn-group:nth-child(12) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1)').click()
         cy.wait(6000)
         //add prices
+        
         cy.get('div.ngRow:nth-child(2) > div:nth-child(7) > div:nth-child(2) > div:nth-child(1)').click().type('1')
         cy.get('div.ngRow:nth-child(4) > div:nth-child(7) > div:nth-child(2) > div:nth-child(1)').click().type('1.2')
         cy.get('div.ngRow:nth-child(8) > div:nth-child(7) > div:nth-child(2) > div:nth-child(1)').click().type('1.3')
         cy.get('div.ngRow:nth-child(10) > div:nth-child(7) > div:nth-child(2) > div:nth-child(1)').click().type('1.4')
+        cy.get('div.ngRow:nth-child(6) > div:nth-child(7) > div:nth-child(2) > div:nth-child(1)').click().type('1.5')
+        cy.get('div.ng-scope:nth-child(12) > div:nth-child(7) > div:nth-child(2) > div:nth-child(1)').click().type('1.6')
         cy.wait(1000)
         cy.get('button.pull-right:nth-child(1)').click()
         //submitting parties

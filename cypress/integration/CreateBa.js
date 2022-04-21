@@ -33,7 +33,7 @@ describe('CreateBa', () => {
         cy.get('li.ng-isolate-scope:nth-child(2) > a:nth-child(1)').click()
         cy.get(':nth-child(1) > :nth-child(2) > .col-xs-8 > .form-group > .col-xs-7 > .form-control').type('Matejki')
         cy.get(':nth-child(1) > :nth-child(2) > .col-xs-8 > .form-group > .col-xs-3 > .form-control').type('6')
-        cy.get(':nth-child(1) > :nth-child(3) > .col-xs-8 > .form-group > .col-xs-3 > .form-control').type('1212AA')
+        cy.get(':nth-child(1) > :nth-child(3) > .col-xs-8 > .form-group > .col-xs-3 > .form-control').type('9999XX')
         cy.get(':nth-child(1) > :nth-child(3) > .col-xs-8 > .form-group > .col-xs-9 > .form-control').type('Gdansk')
         //tab Ba contact
         cy.get('[heading="Contact"] > .ng-binding').click()

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.0000" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2022-04-21T11:46:30" tests="0" file="cypress/integration/CreateBa.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="CreateBa" timestamp="2022-04-21T11:46:30" tests="1" time="0.0000" failures="1">
+    <testcase name="CreateBa LOGIN TO TIM GUI" time="0.0000" classname="LOGIN TO TIM GUI">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `.contract-participants-grid &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1)`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `.contract-participants-grid > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1)`, but never found it.
+    at Context.eval (https://07-tim.imfint.local/__cypress/tests?p=cypress\integration\CreateBa.js:169:176)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

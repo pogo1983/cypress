@@ -1,7 +1,7 @@
 //import LoginGui from '../integration/LoginGui' --later check a
 
 describe('CreateBaZH', () => {
-    it('LOGIN TO TIM GUI', () => {
+    it('CreateBaZH', () => {
         cy.visit("https://07-tim.imfint.local")
         //login to TIM GUI
         cy.contains('Log in').click()

@@ -75,7 +75,7 @@ describe('CreateBaZH', () => {
         //submitting parties
         cy.get('.contract-participants-grid > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1)').should('contain','ZH')
         //edit party
-        cy.get('div.col10:nth-child(1) > a:nth-child(1)').click().wait(3000)
+        cy.get('div.col10:nth-child(1) > a:nth-child(1)').click().wait(4000)
         cy.get('body > div.modal.fade.ng-isolate-scope.practitioner-edit-modal.in > div > div > div.modal-body.ng-scope > form > fieldset > div:nth-child(1) > div:nth-child(1) > div.col-xs-6 > input')
         .click().type('99999999')
         cy.get('body > div.modal.fade.ng-isolate-scope.practitioner-edit-modal.in > div > div > div.modal-body.ng-scope > form > fieldset > div:nth-child(12) > div:nth-child(1)').click()

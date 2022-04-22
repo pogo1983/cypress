@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.0000" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2022-04-22T07:58:29" tests="0" file="cypress/integration/CreateBaAP.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="CreateBaAP" timestamp="2022-04-22T07:58:29" tests="1" time="0.0000" failures="1">
+    <testcase name="CreateBaAP CreateBaAP" time="0.0000" classname="CreateBaAP">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `div.col-xs-8:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; form:nth-child(1) &gt; fieldset:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; p:nth-child(1)`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `div.col-xs-8:nth-child(1) > div:nth-child(1) > div:nth-child(1) > form:nth-child(1) > fieldset:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1)`, but never found it.
+    at Context.eval (https://07-tim.imfint.local/__cypress/tests?p=cypress\integration\CreateBaAP.js:137:197)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

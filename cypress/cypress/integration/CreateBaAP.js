@@ -78,9 +78,21 @@ describe('CreateBaAP', () => {
         cy.get('.contract-participants-grid > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1)')
         .should('contain','AP')
         //edit party
-        cy.get('div.col10:nth-child(1) > a:nth-child(1)').click().wait(3000)
+        cy.get('div.col10:nth-child(1) > a:nth-child(1)').click().wait(6000)
         cy.get('body > div.modal.fade.ng-isolate-scope.practitioner-edit-modal.in > div > div > div.modal-body.ng-scope > form > fieldset > div:nth-child(1) > div:nth-child(1) > div.col-xs-6 > input')
-        .click().type('02110109')
+        .click().type(AGBCodeRandom)
+        
+        function AGBCodeRandom()
+        {
+        var number = '';
+        var possible = '01234567';
+
+        for (var i = 0; i < 8; i++)
+          number += possible.charAt(Math.floor(Math.random() * possible.length));
+    
+        return number;
+        }
+        
         cy.get('body > div.modal.fade.ng-isolate-scope.practitioner-edit-modal.in > div > div > div.modal-body.ng-scope > form > fieldset > div:nth-child(12) > div:nth-child(1)').click()
         cy.contains('Opslaan').click()
         //cy.contains('Instituut').click()

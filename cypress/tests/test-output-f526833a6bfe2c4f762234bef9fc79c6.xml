@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.0000" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2022-04-22T07:59:21" tests="0" file="cypress/integration/CreateBa.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="CreateBaZH" timestamp="2022-04-22T07:59:21" tests="1" time="0.0000" failures="1">
+    <testcase name="CreateBaZH CreateBaZH" time="0.0000" classname="CreateBaZH">
+      <failure message="Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:
+
+`&lt;a tabindex=&quot;0&quot; class=&quot;&quot; data-normalized-text=&quot;&lt;span class=&amp;quot;text&amp;quot;&gt;Uitgebreid&lt;/span&gt;&quot;&gt;...&lt;/a&gt;`
+
+This element `&lt;a&gt;` is not visible because its parent `&lt;div.dropdown-menu.open&gt;` has CSS property: `display: none`
+
+Fix this problem, or use `{force: true}` to disable error checking.
+
+https://on.cypress.io/element-cannot-be-interacted-with" type="CypressError"><![CDATA[CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:
+
+`<a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Uitgebreid</span>">...</a>`
+
+This element `<a>` is not visible because its parent `<div.dropdown-menu.open>` has CSS property: `display: none`
+
+Fix this problem, or use `{force: true}` to disable error checking.
+
+https://on.cypress.io/element-cannot-be-interacted-with
+    at runVisibilityCheck (https://07-tim.imfint.local/__cypress/runner/cypress_runner.js:163907:76)
+    at $Cy.ensureStrictVisibility (https://07-tim.imfint.local/__cypress/runner/cypress_runner.js:163923:12)
+    at runAllChecks (https://07-tim.imfint.local/__cypress/runner/cypress_runner.js:150561:14)
+    at retryActionability (https://07-tim.imfint.local/__cypress/runner/cypress_runner.js:150616:16)
+    at tryCatcher (https://07-tim.imfint.local/__cypress/runner/cypress_runner.js:13022:23)
+    at Function.Promise.attempt.Promise.try (https://07-tim.imfint.local/__cypress/runner/cypress_runner.js:10296:29)
+    at whenStable (https://07-tim.imfint.local/__cypress/runner/cypress_runner.js:168808:63)
+    at https://07-tim.imfint.local/__cypress/runner/cypress_runner.js:168305:14
+    at tryCatcher (https://07-tim.imfint.local/__cypress/runner/cypress_runner.js:13022:23)
+    at Promise._settlePromiseFromHandler (https://07-tim.imfint.local/__cypress/runner/cypress_runner.js:10957:31)
+    at Promise._settlePromise (https://07-tim.imfint.local/__cypress/runner/cypress_runner.js:11014:18)
+    at Promise._settlePromise0 (https://07-tim.imfint.local/__cypress/runner/cypress_runner.js:11059:10)
+    at Promise._settlePromises (https://07-tim.imfint.local/__cypress/runner/cypress_runner.js:11139:18)
+    at Promise._fulfill (https://07-tim.imfint.local/__cypress/runner/cypress_runner.js:11083:18)
+    at https://07-tim.imfint.local/__cypress/runner/cypress_runner.js:12697:46
+From Your Spec Code:
+    at Context.eval (https://07-tim.imfint.local/__cypress/tests?p=cypress\integration\CreateBa.js:145:114)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
